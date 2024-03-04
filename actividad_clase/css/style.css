@@ -1,0 +1,74 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+body, html {
+  height: 100%;
+}
+
+section {
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: coral;
+  border-width: 5px;
+  background-color: rgb(68, 0, 102);
+  color: rgb(212, 212, 212);
+
+  /* Aquí configurar el display flex
+  de la sección entera */
+
+}
+
+section button{
+  margin:  15px;
+  background-color: coral;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  border-color: hotpink;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.02);
+}
+
+.avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: coral;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 0 15px 0;
+  width: 100%;
+}
+
+.avatar div{
+  margin-top: 15px;
+}
+
+.avatar img{
+  width: 100px;
+}
+
+/* Aquí crear los estilos para la clase avatar
+ y configurar el display flex que requiere */
